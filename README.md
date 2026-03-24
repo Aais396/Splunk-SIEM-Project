@@ -27,9 +27,9 @@ Splunk-SIEM-project/
 
 ├── README.md              ← You are here
 
-├── SETUP.md               ← Full installation and configuration walkthrough
+├── setup.md               ← Full installation and configuration walkthrough
 
-├── queries.md             ← All SPL queries I used, with explanations
+├── queries/               ← All SPL queries I used, with explanations
 
 └── screenshots/           ← Visual proof of each step working
 
