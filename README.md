@@ -2,7 +2,7 @@
 
 I built this project to get hands-on experience with centralized log management. The idea was simple: set up a Splunk server on one machine and then configure a second machine to forward its logs to that server in real time. What sounds straightforward on paper involves quite a few moving parts — ports, configurations, receiver settings — so I documented everything here so anyone can follow along or reproduce it from scratch.
 
-Objective:
+##Objective:
 
 Most systems generate logs constantly — login attempts, service errors, network activity, application events. The problem is those logs are stuck on whichever machine produced them. Splunk solves this by pulling all those logs into one place where you can search, filter, and build reports across everything at once.
 
@@ -13,13 +13,13 @@ In this project, I have two machines talking to each other:
 
 Once both were connected and the logs started flowing in, I ran several SPL (Splunk Processing Language) queries to filter, analyze, and report on the data.
 
-Why I Made This:
+##Why I Made This:
 
 Setting up a SIEM-like environment is one of those skills that comes up constantly in system administration and cybersecurity roles. I wanted to actually build one rather than just read about it. Going through the process of configuring a forwarder, troubleshooting a connection that wasn't working, and then finally seeing live logs appear in the Splunk dashboard — that's the kind of experience you can't get from a video.
 
 This project also gave me a good foundation for understanding how enterprise monitoring tools work at a basic level.
 
- Project Structure
+## Project Structure
  
 Splunk-SIEM-project/
 
@@ -41,7 +41,7 @@ queries.md: contains every SPL search query I used during this project. Each que
 
 screenshots: It holds all the screenshots I captured at each stage — the login page, the receiver configuration, the forwarder connection, and the final search results. If you want a visual sense of what everything looks like before attempting it yourself, browse through that folder first.
 
-Tools and Technologies:
+##Tools and Technologies:
 
 * Splunk Enterprise the main server that indexes and displays logs
 * Splunk Universal Forwarder lightweight agent installed on the second machine to send logs
